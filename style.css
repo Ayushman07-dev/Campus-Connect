@@ -326,3 +326,36 @@ body{background:#0f172a;color:#f8fafc;}
  .main-nav{background:#0f172a;border-color:#334155;}
  .main-nav a{color:#cbd5e1;}
 }
+
+
+/* ===== Reference HTML / SkillHub-style shell refinements ===== */
+.brand > span:last-child{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.brand-subtitle{
+  display:block;
+  font-family:var(--font-body);
+  font-size:.68rem;
+  font-weight:500;
+  line-height:1;
+  letter-spacing:.04em;
+  color:#64748b;
+}
+.brand:hover .brand-subtitle{color:#94a3b8;}
+.site-footer .footer-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1.5rem;
+}
+.site-footer .footer-row > div:last-child{text-align:right;}
+@media(max-width:760px){
+  .brand-subtitle{display:none;}
+  .site-footer .footer-row{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .site-footer .footer-row > div:last-child{text-align:left;}
+}
