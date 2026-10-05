@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CampusConnect brings every college event, hackathon, workshop and internship into one searchable place.">
+  <title>CampusConnect – Student Event & Opportunity Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#/" aria-label="CampusConnect home">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span class="brand-name">CampusConnect</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/events" data-nav="events">Events</a>
+        <a href="#/saved" data-nav="saved">Saved <span class="badge" id="savedBadge" hidden>0</span></a>
+        <a href="#/dashboard" data-nav="dashboard">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p><strong>CampusConnect</strong> – Student Event &amp; Opportunity Portal</p>
+      <p class="muted">Prototype for academic use. Your saved events and registrations are stored only in this browser.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
